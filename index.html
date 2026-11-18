@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Gabriel Dulac-Arnold: reinforcement learning, reasoning, robotics, and projects at the tip of Brittany." name="description"/>
+<title>Gabriel Dulac-Arnold — research &amp; projects</title>
+<link href="styles.css?v=b808963922b7" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header wrap">
+<div class="site-identity"><h1 class="site-name"><a class="wordmark" href="#main"><span class="name-text">Gabriel Dulac-Arnold</span></a></h1><button class="seagull" type="button" aria-label="Say hello to the seagull"><img src="assets/media/seagull.svg" alt="" width="48" height="20"/><span class="seagull-call" role="status" aria-live="polite"></span></button></div>
+<nav aria-label="Main navigation">
+<a href="#research">Research</a>
+<a href="#projects">Projects</a>
+<a href="#about">Mini-CV</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<main class="wrap" id="main">
+<section aria-label="About Gabriel" class="intro"><div class="intro-copy">
+<p class="location">Scientist &amp; Builder</p>
+<p class="lede">I build and lead research teams, turning advances in reinforcement learning into working systems.</p>
+<p>I’ve worked on reasoning in Gemini, learning from demonstrations, and control systems that have to work beyond a benchmark. Away from the keyboard: surfing, sailing, climbing, and a few collective projects.</p>
+<p class="current-role">Now: Founding Research Scientist at <a href="https://uma.bot">UMA ↗</a></p>
+<div class="intro-links"><a href="https://scholar.google.fr/citations?user=fMN7wNwAAAAJ&amp;hl=en">Google Scholar ↗</a><a href="mailto:gabe@squirrelsoup.net">Email ↗</a><a href="https://www.linkedin.com/in/gabriel-dulac-arnold-0b942251/">LinkedIn ↗</a><a href="https://twitter.com/gabepsilon">Twitter ↗</a></div>
+</div><figure class="portrait"><img alt="Gabriel smiling aboard a sailboat." height="1216" src="assets/media/headshot.png" width="817"/></figure></section>
+<section aria-labelledby="research-title" class="section" id="research">
+<div class="section-heading"><h2 id="research-title">Research</h2>
+<div aria-label="Research affiliations and projects" class="research-affiliations">
+<a href="https://deepmind.google/models/gemini/"><img alt="" decoding="async" height="24" src="assets/logos/gemini.svg" width="24"/><span>Gemini</span></a>
+<a href="https://research.google/"><img alt="" decoding="async" height="24" src="assets/logos/google-brain-anatomical.png" width="24"/><span>Google Brain</span></a>
+<a href="https://deepmind.google/"><img alt="" decoding="async" height="24" src="assets/logos/deepmind-swirl.svg" width="24"/><span>Google DeepMind</span></a>
+</div>
+<a class="all-publications" href="https://scholar.google.fr/citations?user=fMN7wNwAAAAJ&amp;hl=en">All publications ↗</a></div>
+<div class="section-body">
+<article class="research-row gemini-row">
+<h3>Reasoning &amp; post-training</h3>
+<div class="gemini-columns">
+<section aria-labelledby="thinking-title" class="gemini-column">
+<h4 class="research-context" id="thinking-title">Gemini Thinking</h4>
+<p class="annotation">Helped build and co-led an early team contributing to reasoning in Gemini, developing RL methods and the science and infrastructure for experiments.</p>
+<figure aria-describedby="thinking-source" class="research-figure thinking-performance">
+<a aria-label="View Gemini GPQA Diamond performance plot at full size" href="assets/media/gemini-thinking-gpqa.webp"><img alt="Gemini 2.5 Flash on GPQA Diamond: performance rises from about 74% to 80% as the thinking budget increases from 0K to 24K tokens." class="research-image" decoding="async" height="1746" loading="lazy" src="assets/media/gemini-thinking-gpqa.webp" width="1600"/></a>
+</figure>
+<p class="thinking-source" id="thinking-source">GPQA Diamond performance with increasing thinking budget.<br/><a href="https://developers.googleblog.com/en/start-building-with-gemini-25-flash/">Gemini 2.5 Flash announcement · April 2025 ↗</a></p>
+</section>
+<section aria-labelledby="post-training-title" class="gemini-column">
+<h4 class="research-context" id="post-training-title">Gemini Post-Training</h4>
+<p class="annotation">Co-led a push on RL and token efficiency strategy, running the training that produced the September 2025 Gemini 2.5 Flash checkpoint. The release improved quality while using 24% fewer output tokens.</p>
+<figure aria-describedby="post-training-source" class="research-figure post-training-performance">
+<div class="chart-stage">
+<a id="quality-chart" class="quality-chart" aria-label="View Gemini quality and response-time chart at full size" href="assets/media/gemini-quality-speed.png"><img alt="Gemini 2.5 Flash and Flash-Lite September 2025 previews achieve higher Artificial Analysis Intelligence Index scores and lower end-to-end response times than the previous stable models, both with and without thinking." class="research-image" decoding="async" height="2480" loading="lazy" src="assets/media/gemini-quality-speed.png" width="3840"/></a>
+<a id="efficiency-chart" class="efficiency-chart" aria-label="View Gemini output-token-efficiency chart at full size" href="assets/media/gemini-token-efficiency.png" hidden><img alt="Output tokens on the Artificial Analysis Intelligence Index: September 2025 Flash uses 71M versus 93M for the previous stable model, a 24% reduction. Flash-Lite uses 70M versus 140M, a 50% reduction." class="research-image" decoding="async" height="2474" loading="lazy" src="assets/media/gemini-token-efficiency.png" width="3840"/></a>
+</div>
+</figure>
+<div class="thinking-source" id="post-training-source">
+<div class="chart-controls" role="group" aria-label="Post-training chart view" hidden>
+<button type="button" aria-pressed="true" aria-controls="quality-chart" data-chart="quality-chart">Quality &amp; speed</button>
+<button type="button" aria-pressed="false" aria-controls="efficiency-chart" data-chart="efficiency-chart">Token efficiency</button>
+</div>
+<p>Quality, response time, and token usage on Artificial Analysis evaluations.<br/><a href="https://developers.googleblog.com/en/continuing-to-bring-you-our-latest-models-with-an-improved-gemini-2-5-flash-and-flash-lite-release/">Gemini Flash update · September 2025 ↗</a></p>
+<noscript><a href="assets/media/gemini-token-efficiency.png">View token-efficiency chart ↗</a></noscript>
+</div>
+</section>
+</div>
+</article>
+
+<article class="research-row"><h3>Planning with Models &amp; Learning from Humans</h3>
+<div class="planning-columns">
+<section aria-labelledby="models-title" class="planning-column">
+<h4 id="models-title">Planning with models</h4>
+<p class="column-note">Learning models for control, exploring without a task, and transferring what an agent learns to new objectives.</p>
+<figure class="research-figure">
+<a href="assets/media/mbop.webp"><img alt="MBOP Figure 2: constrained Cartpole trajectories and goal-conditioned quadruped headings." class="research-image" decoding="async" height="640" loading="lazy" src="assets/media/mbop.webp" width="1104"/></a>
+<figcaption><a class="media-source" href="https://arxiv.org/abs/2008.05556">Model-Based Offline Planning ↗</a><span class="figure-note">Fig. 2 · Constrained and goal-conditioned control</span></figcaption>
+</figure>
+<p class="column-note related-label">Related work</p><ul aria-label="Related work on models, exploration, and transfer" class="related-papers model-papers">
+<li><a href="https://proceedings.mlr.press/v202/walker23a.html">Investigating the Role of Model-Based Learning in Exploration and Transfer ↗</a><span class="figure-note">How exploration, learned dynamics, and policies contribute to transfer.</span></li>
+<li><a href="https://arxiv.org/abs/2109.14311">Learning Dynamics Models for Model Predictive Agents ↗</a><span class="figure-note">Which model-learning choices matter for planning and control.</span></li>
+<li><a href="https://proceedings.mlr.press/v70/silver17a.html">The Predictron: End-To-End Learning and Planning ↗</a><span class="figure-note">Learning an abstract internal model for value prediction.</span></li>
+<li><a href="https://arxiv.org/abs/2211.03521">On the Importance of Data Collection for Training General Goal-Reaching Policies ↗</a><span class="figure-note">Related exploration work: collecting useful data before a downstream task is known.</span></li>
+</ul>
+</section>
+<section aria-labelledby="humans-title" class="planning-column"><h4 id="humans-title">Learning from humans</h4>
+<p class="column-note">Learning from demonstrations and human video.</p>
+<figure class="research-figure">
+<a href="assets/media/poir.webp"><img alt="POIR Figure 8: robot sequences showing retries when picking up a can and lifting a block." class="research-image" decoding="async" height="432" loading="lazy" src="assets/media/poir.webp" width="1092"/></a>
+<figcaption><a class="media-source" href="https://arxiv.org/abs/2305.01400">Get Back Here · Robust Imitation ↗</a><span class="figure-note">Fig. 8 · Retrying after a missed grasp</span></figcaption>
+</figure>
+<p class="column-note related-label">Related work</p>
+<ul aria-label="Related work on learning from humans" class="related-papers">
+<li><a href="https://arxiv.org/abs/2106.08050">Residual Reinforcement Learning from Demonstrations ↗</a></li>
+<li><a href="https://arxiv.org/abs/2211.09019">Learning Reward Functions for Robotic Manipulation by Observing Humans ↗</a></li>
+<li><a href="https://ojs.aaai.org/index.php/AAAI/article/view/11757">Deep Q-learning from Demonstrations (DQfD) ↗</a></li>
+</ul></section>
+</div></article>
+<article class="research-row">
+<h3>Real-world reinforcement learning</h3>
+<p class="research-context">Getting RL working for real.</p>
+<div class="research-gallery realworld-gallery">
+<figure class="research-figure">
+<a href="https://github.com/google-research/realworldrl_suite"><img alt="Simulated humanoids with no perturbation, a larger head, and low friction." class="research-image" decoding="async" height="240" loading="lazy" src="assets/media/realworld-rl.webp" width="960"/></a>
+<figcaption><a class="media-source" href="https://github.com/google-research/realworldrl_suite">Real-World RL benchmark ↗</a><span class="figure-note">Led research on the challenges of deploying RL.</span></figcaption>
+</figure>
+<figure class="research-figure">
+<a href="https://deepmind.google/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/"><img alt="Pumps and brightly colored cooling pipes inside a Google datacenter." class="research-image cooling-image" decoding="async" height="450" loading="lazy" src="assets/media/datacenter-cooling.webp" width="800"/></a>
+<figcaption><a class="media-source" href="https://deepmind.google/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/">Google datacenter cooling ↗</a><span class="figure-note">Helped start the project; co-inventor on the <a href="https://patents.google.com/patent/US10643121B2/en">control-system patent ↗</a>.</span></figcaption>
+</figure>
+</div>
+<p class="realworld-paper"><a href="https://robovqa.github.io/">RoboVQA: Multimodal Long-Horizon Reasoning for Robotics ↗</a><span class="figure-note">Contributed to work on visual question answering and reasoning for real-world robotics.</span></p></article>
+</div>
+</section>
+<section aria-labelledby="projects-title" class="section" id="projects">
+<div class="section-heading"><h2 id="projects-title">Projects</h2><p class="margin-note">Boats, cliffs, workshops.<br/>Things built together.</p></div>
+<div class="section-body project-grid">
+<article class="project"><img alt="Crew handling the rigging aboard Pegasus." class="project-image" decoding="async" height="600" loading="lazy" src="assets/media/passeurs.webp" width="800"/><h3>Passeurs d’Iroise</h3><p class="annotation">Helped start and build a sail-training non-profit that owns Pegasus.</p><a class="media-source" href="https://passeursdiroise.fr/">Visit project ↗</a></article>
+<article class="project"><img alt="Two climbers on the cliffs above the sea at Pen-Hir." class="project-image" decoding="async" height="600" loading="lazy" src="assets/media/pen-hir.webp" width="800"/><h3>Grimpeurs de Pen-Hir</h3><p class="annotation">Co-founded the local climbing club.</p><a class="media-source" href="https://grimpeursdepenhir.fr/">Visit project ↗</a></article>
+<article class="project"><img alt="Timber and sawmill machinery inside the Noz’Ateliers workshop." class="project-image" decoding="async" height="600" loading="lazy" src="assets/media/nozateliers.webp" width="1200"/><h3>Nozateliers</h3><p class="annotation">Shared workshops and a collective sawmill in Nozières.</p><a class="media-source" href="https://www.nozateliers.fr/la-scierie-de-nozateliers/">Visit project ↗</a></article>
+<article class="project"><img alt="A small orange Riverdrone vessel on a river." class="project-image" decoding="async" height="600" loading="lazy" src="assets/media/riverdrone.webp" width="800"/><h3>Riverdrone</h3><p class="annotation">Helped start an aquatic drone non-profit and bring its drones into production.</p><a class="media-source" href="https://riverdrone.fr/">Visit project ↗</a></article>
+</div>
+</section>
+<section aria-labelledby="about-title" class="section" id="about">
+<div class="section-heading"><h2 id="about-title">Mini-CV</h2></div>
+<div class="section-body about-body"><dl class="mini-cv">
+<div><dt>2026–</dt><dd><span class="cv-role">Founding Research Scientist · <a href="https://uma.bot">UMA</a></span><p class="cv-description">Part of the AI team building general-purpose robots that can understand and act in the physical world.</p></dd></div>
+<div><dt>2023–2026</dt><dd><span class="cv-role">Staff Research Scientist · Google DeepMind</span><p class="cv-description">Helped build and co-led one of the teams contributing to Gemini Thinking. Worked on reinforcement learning, reasoning, and the infrastructure for reliable experimentation.</p></dd></div>
+<div><dt>2019–2023</dt><dd><span class="cv-role">Research Scientist · Google Brain</span><p class="cv-description">Led the real-world RL effort and projects on offline planning and learning from demonstrations. Also contributed to robotics research and applied ML collaborations in healthcare and marine biology.</p></dd></div>
+<div><dt>2017–2019</dt><dd><span class="cv-role">Independent R&amp;D · Blacksheep AI</span><p class="cv-description">Ran an independent consultancy, including robotics R&amp;D for Nuro, where I built a complete grocery-picking demonstrator. Also worked with Air Street on technical due diligence.</p></dd></div>
+<div><dt>2014–2017</dt><dd><span class="cv-role">Research Scientist · DeepMind</span><p class="cv-description">A founding research scientist in DeepMind’s Applied team, working on projects including a vision-based braking watchdog for Waymo. Helped start Google’s datacenter cooling project and co-invented the patented control approach.</p><p class="cv-description">Also co-initiated an industrial robotics project within DeepMind.</p></dd></div>
+<div><dt>2010–2014</dt><dd><span class="cv-role">Ph.D., Computer Science · Sorbonne Université</span><p class="cv-description">Researched how reinforcement learning can make classifiers choose which information to acquire under a budget, with Ludovic Denoyer and Patrick Gallinari. Extended the approach to images, alongside teaching systems and introductory robotics.</p></dd></div>
+<div><dt>2005–2010</dt><dd><span class="cv-role">Software Engineering · INSA Lyon</span><p class="cv-description">Earned an engineering degree in computer science in Lyon, before moving into reinforcement learning research.</p></dd></div>
+</dl></div>
+</section>
+<section aria-labelledby="contact-title" class="section contact" id="contact">
+<div class="section-heading"><h2 id="contact-title">Contact</h2></div>
+<div class="section-body"><p class="body-lede">For conversations about research, building things, or shared interests.</p><p class="body-lede">Based in Brittany, France.</p><a class="email" href="mailto:gabe@squirrelsoup.net">gabe@squirrelsoup.net ↗</a><a class="media-source" href="https://github.com/dulacarnold">GitHub ↗</a></div>
+</section>
+</main>
+<footer class="wrap"><span>gabe.squirrelsoup.net</span><span>Gabriel Dulac-Arnold</span></footer>
+<script src="seagull.js" defer></script>
+<script src="name-signal.js" defer></script>
+<script src="research-charts.js" defer></script>
+</body>
+</html>
